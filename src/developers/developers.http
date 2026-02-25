@@ -1,0 +1,31 @@
+### list developers
+GET http://localhost:3000/developers
+Host: localhost:3000
+
+### get developers
+GET http://localhost:3000/developers/dev_vgvtVBF2F-UmT4HHdFJHV
+Host: localhost:3000
+
+### create developers
+POST http://localhost:3000/developers/
+Host: localhost:3000
+Content-Type: application/json
+
+{
+    "name": "Gabriel Alencar Nunes Ferreira",
+    "email": "gabriel.alencar@grupo-gcb.com.br",
+    "dateOfBirth": "1990-01-01"
+}
+
+### update developers
+PATCH  http://localhost:3000/developers/dev_of9kKkC_q2IxJYAQFwwAZ   
+Host: localhost:3000
+Content-Type: application/json
+
+{
+    "email": "teste@grupo-gcb.com.br"
+}
+
+### delete developers
+DELETE http://localhost:3000/developers/dev_vgvtVBF2F-UmT4HHdFJHV
+Host: localhost:3000
